@@ -68,9 +68,11 @@ nav {
     text-decoration:none;
 }
 nav h1 {
-padding-top:0.625%;
+padding-top: 50px;/*0.625%;*/
 padding-left: 160px;
 font-size: xx-large;
+font-weight: bold;
+
 }
 
 button {
@@ -118,7 +120,7 @@ font-size:xx-large;
 }
 .immage-button a {
 border: 1px solid red;
-padding: 5px 5px;
+padding: 0.3125% 0.3125%; /*5px/16*/
 color:red;
 }
 /* ==========================================
@@ -151,13 +153,13 @@ footer {
     background-color:lightgrey;
     /* padding-bottom:40px; */
     text-align: center;
-    height:13vh;
-}
+} 
 footer div {
 margin: 10px auto;
 
 }
 footer, button, a {
+    margin-top: 36px;
     font-size: x-large;
     padding: 10px 10px;
 }
