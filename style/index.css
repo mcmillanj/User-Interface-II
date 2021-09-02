@@ -1,1 +1,54 @@
-/* Add CSS styling here */
+nav {
+    display: flex;
+    justify-content:space-between;
+    text-decoration:none;
+}
+.sectiontop {
+
+    display: flex;
+    justify-content: center;
+} 
+
+.immage-button {
+    color:white;
+    font-size: large;
+    width: 600px;
+    height:400px;
+   background-image: url("https://picsum.photos/600/400"); 
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+footer {
+
+    background-color:lightgrey;
+    padding: 20px;
+    text-align: center;
+}
+.firstrow {
+    display:flex;
+    
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.pics {
+text-align:center;
+}
+
+button {
+background-color:white;
+border:1px solid black;
+color:black;
+padding: 10px 10px;
+}
+
+button:hover {
+background-color: black;
+color: white;
+border:1px solid white;
+}
+button a {
+   text-decoration: none;
+    color: inherit;
+
+}
