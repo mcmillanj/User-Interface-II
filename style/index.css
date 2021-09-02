@@ -1,6 +1,13 @@
+
+
+
+
+
+
 nav {
     display: flex;
     justify-content:space-between;
+    padding-right: 60px;
     text-decoration:none;
 }
 .sectiontop {
@@ -12,11 +19,15 @@ nav {
 .immage-button {
     color:white;
     font-size: large;
-    width: 600px;
+    width: 80%;
     height:400px;
    background-image: url("https://picsum.photos/600/400"); 
    background-repeat: no-repeat;
    background-size: cover;
+}
+.immage-button a {
+border: 1px solid white;
+padding: 5px 5px;
 }
 footer {
 
