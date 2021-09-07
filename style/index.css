@@ -1,1 +1,291 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	/* display: block; */
+} 
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =====================================
+   universal setting
+   =====================================
+*/
+  * {
+   /* box-sizing: border-box;  */
+    padding:0;
+    margin:0;
+    max-width:100%;
+  } 
+
+/* =======================================
+navigation  section
+
+==========================================
+*/
+.container{
+width: 1500px;
+margin: 0 auto;
+
+}
+nav {
+    display: flex;
+    justify-content:space-between;
+    padding-right: 130px;
+    text-decoration:none;
+}
+nav h1 {
+padding-top: 20px;/*0.625%;*/
+padding-left: 90px;
+font-size: xx-large;
+font-weight: bold;
+
+}
+
+button {
+    background-color:white;
+    border:1px solid black;
+    color:black;
+    padding: 10px 10px;
+    margin-top:15px;
+    
+    }
+    
+    button:hover {
+    background-color: black;
+    color: white;
+    border:1px solid white;
+    }
+    button a {
+       text-decoration: none;
+        color: inherit;
+
+    }
+/* ===========================================
+first section sectiontop
+==============================================
+*/
+.sectiontop {
+
+    display: flex;
+    justify-content: center;
+} 
+
+.immage-button {
+    color:red;
+    font-size: large;
+    margin-top: 10px;
+    width: 80%;
+    height:400px;
+   background-image: url("https://picsum.photos/600/400"); 
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.immage-button h1 {
+padding-bottom: 20px;
+
+font-size:xx-large;
+}
+.immage-button a {
+border: 1px solid red;
+padding: 0.3125% 0.3125%; /*5px/16*/
+color:red;
+}
+/* ==========================================
+second section pictures
+=============================================
+*/
+.firstrow {
+    display:flex;
+    
+    flex-direction: row;
+    justify-content: space-around;/* space between*/
+    padding: 20px;
+}
+.firstrow p {
+font-size: x-large;
+
+}
+.pics {
+text-align:center;
+
+}
+/* ===========================================
+footer section
+=============================================
+*/
+
+
+footer {
+
+    background-color:lightgrey;
+    /* padding-bottom:40px; */
+    text-align: center;
+} 
+footer div {
+margin: 10px auto;
+
+}
+footer, button, a {
+    margin-top: 2.25%;
+    font-size: x-large;
+    padding: 10px 10px;
+}
+
+
+/* =============================================
+media gueries
+================================================
+*/
+@media all and (max-width: 800px){
+    nav {
+        display: flex;
+        justify-content:space-between;
+        padding-right: 8.125%;
+        text-decoration:none;
+    }  
+    
+    nav h1 {
+        padding-top: 50px;/*0.625%;*/
+        padding-left: 5.625rem;/*90px*/
+        font-size: small;
+        font-weight: bold;
+    }
+    button {
+        background-color:white;
+        border:1px solid black;
+        color:black;
+        padding: 5px 5px;
+        margin-top:10px;
+        
+        }
+        
+        button:hover {
+        background-color: blue;
+        color: white;
+        border:1px solid black;
+        }
+        button a {
+           text-decoration: none;
+            color: inherit;
+    
+        }
+
+    .firstrow {
+        display:flex;
+        
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    
+        }
+
+
+    footer {
+
+        background-color:red;
+        text-align: center;
+    } 
+
+
+    footer div {
+        margin: 0.625% auto;
+
+}
+}
+@media all and (max-width: 500px){
+    nav {
+        display: flex;
+        justify-content:space-between;
+        padding-right: 8.125%;
+        text-decoration:none;
+    
+    }
+    
+    
+    nav h1 {
+        padding-top: 50px;/*0.625%;*/
+        padding-left: 5.625rem;/*90px*/
+        font-size: small;
+        font-weight: bold;
+    }
+    button {
+        background-color:orange;
+        border:1px solid black;
+        color:black;
+        padding: 2px 2px;
+        margin-top:4px;
+        
+        }
+        
+        button:hover {
+        background-color: black;
+        color: white;
+        border:1px solid white;
+        }
+        button a {
+           text-decoration: none;
+            color: inherit;
+    
+        }
+    
+    .firstrow {
+    display:flex;
+    
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+
+    }
+
+
+    footer {
+
+        background-color:blue;
+        
+        text-align: center;
+    }  
+    footer div {
+        margin: 0.625% auto;
+
+}
+
+}
